@@ -64,14 +64,14 @@ int readSizeData(const string &fileName) {
         
         if (tempSize != " ") {
             size = stoi(tempSize);
-            cout << "Loading " << size << " data" << endl;
+            cout << "Reading " << size << " data" << endl;
         } else {
-            cout << "Loading " << size << " data" << endl;
+            cout << "Reading " << size << " data" << endl;
         }
         
         fileIn.close();
     } catch (exception e) {
-        cout << "Error while reading size of data" << endl;
+        cout << "There's no data to read" << endl;
     }
     
     return size;
@@ -475,11 +475,12 @@ user_login:
 
 //Initialization
 int main() {
-    showLoginMenu();
-    while (true) {
-        int jumlahDataBarang = readSizeData(stockFileName);
-        barang mBarang[jumlahDataBarang];
-        readData(stockFileName, mBarang);
-        showMenu(mBarang);
-    }
+
+     showLoginMenu();
+       while (true) {
+           int jumlahDataBarang = readSizeData(stockFileName);
+           barang mBarang[jumlahDataBarang];
+           readData(stockFileName, mBarang);
+           showMenu(mBarang);
+       }
 }

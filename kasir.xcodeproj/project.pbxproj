@@ -88,7 +88,7 @@
 		65EBA5BC22A2CF9E001EC639 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 1020;
+				LastUpgradeCheck = 1120;
 				ORGANIZATIONNAME = "Andre Setiawan A";
 				TargetAttributes = {
 					65EBA5C322A2CF9E001EC639 = {
@@ -102,6 +102,7 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				Base,
 			);
 			mainGroup = 65EBA5BB22A2CF9E001EC639;
 			productRefGroup = 65EBA5C522A2CF9E001EC639 /* Products */;
@@ -239,6 +240,7 @@
 		65EBA5CC22A2CF9E001EC639 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 23DY6L8XKM;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -248,6 +250,7 @@
 		65EBA5CD22A2CF9E001EC639 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 23DY6L8XKM;
 				PRODUCT_NAME = "$(TARGET_NAME)";
